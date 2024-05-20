@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <div class="row mx-auto">
+
+        <div class="col-lg-3  my-3 py-3 align-content-center align-self-center text-center shadow">
+            <app-sellerprofile/> 
+        </div>
+
+        <div class=" col-6 mx-center justify-content-center align-items-center text-center shadow mt-5">
+            <h2> <b> Welcome, create a New Product </b> </h2>
+
+            <form action="" class="form form-controls my-2 py-2" >
+                <!-- <label for=""> Product Name </label> -->
+                <input type="text" placeholder="Enter product name" value="" [(ngModel)]="productName" class="form-control my-2" required />
+               
+                <!-- <label for=""> Description </label> -->
+                <input type="text" placeholder="Enter product description" value="" [(ngModel)]="productDescription" class="form-control my-2" required />
+                
+                <!-- <label for=""> Price </label> -->
+                <input type="number" placeholder="Enter product price" value="productPrice" [(ngModel)]="productPrice" class="form-control my-2" required />
+             
+                <select class="my-2 w-50" placeholder="" value="selectedCategory" [(ngModel)]="selectedCategory"  name=""  id="selectedCategory" required >
+                    <option value="">Select Category</option>
+                    <option value=" electronics">Electronics</option>
+                    <option value="clothings"> Clothings</option>
+                    <option value="shoes"> Shoes</option>
+                    <option value="food"> Food </option>
+                </select>
+
+                <button class="btn btn-danger w-100 my-3"> Upload </button>
+                <!-- <select class="btn btn-outline-secondary mx-3 my-2" name="" id="filterType" value="filterType" [(ngModel)]= "filterType">
+                    <option value=""> Select Filter</option>
+                    <option value="date"> Date</option>
+                    <option value="item"> Item</option>
+                    <option value="batch">Batch</option>
+                </select>
+                  -->
+            </form>
+        </div>
+    </div>
+</div>

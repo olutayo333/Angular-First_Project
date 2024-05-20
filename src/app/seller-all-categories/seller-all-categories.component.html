@@ -1,0 +1,18 @@
+<div class="container-fluid">
+    <div class="row d-flex mx-center " style="height: 50vh;">
+        <div class="col-lg-3  my-3 py-3 align-content-center align-self-center text-center shadow">
+            <app-sellerprofile/> 
+        </div>
+
+        <div class="col-lg-4 mt-5  mx-auto shadow  justify-content-center align-items-center align-content-center">
+            <h2 class="text-center"> <u>Create a New Category</u></h2>
+            <label for=""> <b>Name:</b> </label>
+            <input type="text" [(ngModel)]="name" class="form-control">
+
+            <label for="" class="mt-2"> <b>Description:</b></label>
+            <textarea [(ngModel)]="description" name="" id="" class="form-control"> </textarea>
+            
+            <button class="btn btn-outline-dark w-100 my-3">  <b>Create Category</b> </button>
+        </div>
+    </div>
+</div>

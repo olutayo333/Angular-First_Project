@@ -1,0 +1,48 @@
+<div class="container-fluid">
+    <div class="row shadow">
+
+        <div class="col-lg-3 mt-5 pt-5 my-3 py-3 align-content-center align-self-center text-center shadow">
+            <app-sellerprofile/> 
+        </div>
+        <div class="col-lg-6 mx-auto my-5 py-5 rounded shadow ">
+            <h2 className="text-center" style="letter-spacing: 3px;"><u>Transaction List</u></h2>
+            <div class="my-3 px-3">
+                <label for="" class="fs-5"> Filter By:</label>
+                <select class="btn btn-outline-secondary mx-3 my-2" name="" id="filterType" value="filterType" [(ngModel)]= "filterType">
+                    <option value=""> Select Filter</option>
+                    <option value="date"> Date</option>
+                    <option value="item"> Item</option>
+                    <option value="batch">Batch</option>
+                </select>
+                <!-- {{filterType &&( -->
+                    <input type="text" class="form-control" value="filterType" [(ngModel)]="filterValue" placeholder={{filterType}} />
+                <!-- )}} -->
+                <button class="btn btn-outline-primary my-2 col-10 d-block mx-auto">Filter</button>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Item</th>
+                                <th>Batch</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tbody>
+                    </table>
+        
+                </div>
+
+        </div>
+        </div>
+        
+    </div>
+</div>
